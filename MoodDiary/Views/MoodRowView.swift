@@ -12,15 +12,37 @@ struct MoodRowView: View {
     var mood: Mood
     
     var body: some View {
+  ZStack {
   
+  Rectangle().fill(Color(UIColor.systemBackground)).cornerRadius(10).shadow(color: .gray, radius: 5, x: 1, y: 1)
         HStack {
+            VStack {
+            Text(mood.monthString)
+            Text("\(mood.dayAsInt)")
             
-            Text(mood.dateString)
-            
+            }
             Text(mood.comment ?? "No comment made.").font(.title).bold()
+            
+            Spacer()
+            
+            moodImage()
            
-        }.foregroundColor(mood.emotion.moodColor)
-       
+            }.foregroundColor(mood.emotion.moodColor).padding()
+        }
+    }
+    
+    func moodImage() -> some View {
+        var imageName = "none"
+        
+        switch mood.emotion.state {
+        case .happy:
+            imageName = "happy"
+        case .meh:
+            imageName = "meh"
+        case .sad:
+            imageName = "sad"
+        }
+        return Image(imageName).resizable().frame(width: 20, height: 20)
     }
 }
 

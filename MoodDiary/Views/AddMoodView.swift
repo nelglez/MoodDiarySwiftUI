@@ -18,6 +18,7 @@ struct AddMoodView: View {
     @State private var happyIsSelected = false
     @State private var mehIsSelected = false
     @State private var sadIsSelected = false
+    @State private var counterLabel = "101/101"
     
     var body: some View {
         VStack(spacing: 30) {
@@ -53,9 +54,10 @@ struct AddMoodView: View {
                     Image("sad").resizable().frame(width: 50, height: 50).foregroundColor(.red).background(sadIsSelected ? Color.yellow : Color.clear).clipShape(Circle())
                 }
             }
-            
-            MultiLineTextField(txt: $text).frame(height: 150).cornerRadius(20)
-            
+            ZStack(alignment: .bottomTrailing) {
+            MultiLineTextField(txt: $text, counterLabel: $counterLabel).frame(height: 100).cornerRadius(20)
+                Text("Remaining: \(counterLabel)").font(.footnote).foregroundColor(.gray).padding([.bottom, .trailing], 8)
+        }
             Button(action: {
                     self.moodModelController.createMood(emotion: Emotion(state: self.emotionState, color: self.moodColor), comment: self.text, date: Date())
                     
@@ -63,7 +65,7 @@ struct AddMoodView: View {
             }) {
                 Text("Add Mood Entry").bold().frame(width: UIScreen.main.bounds.width - 30, height: 50).background(Color.blue).foregroundColor(.white).cornerRadius(10)
             }
-            
+            Spacer()
         }.padding()
     }
 

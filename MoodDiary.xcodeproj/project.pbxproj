@@ -3,10 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A2CE067243DF53800CCBB0D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CE066243DF53800CCBB0D /* Colors.swift */; };
+		7A2CE069243DF56300CCBB0D /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CE068243DF56300CCBB0D /* Day.swift */; };
+		7A2CE06B243DF59D00CCBB0D /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CE06A243DF59D00CCBB0D /* Month.swift */; };
+		7A2CE06D243DF5D600CCBB0D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CE06C243DF5D600CCBB0D /* Helper.swift */; };
+		7A2CE06F243DF5FE00CCBB0D /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CE06E243DF5FE00CCBB0D /* GridStack.swift */; };
+		7A2CE071243DF62B00CCBB0D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CE070243DF62B00CCBB0D /* CalendarView.swift */; };
+		7A2CE073243DF65200CCBB0D /* DayCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CE072243DF65200CCBB0D /* DayCellView.swift */; };
+		7A2CE075243DF66E00CCBB0D /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CE074243DF66E00CCBB0D /* MonthView.swift */; };
+		7A2CE077243DF68C00CCBB0D /* WeekdaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CE076243DF68C00CCBB0D /* WeekdaysView.swift */; };
+		7A2CE07A243E271600CCBB0D /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7A2CE079243E271600CCBB0D /* IQKeyboardManagerSwift */; };
 		7A36150E242E36D400473ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36150D242E36D400473ED1 /* AppDelegate.swift */; };
 		7A361510242E36D500473ED1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36150F242E36D500473ED1 /* SceneDelegate.swift */; };
 		7A361512242E36D500473ED1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A361511242E36D500473ED1 /* ContentView.swift */; };
@@ -22,6 +32,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A2CE066243DF53800CCBB0D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7A2CE068243DF56300CCBB0D /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		7A2CE06A243DF59D00CCBB0D /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		7A2CE06C243DF5D600CCBB0D /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		7A2CE06E243DF5FE00CCBB0D /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		7A2CE070243DF62B00CCBB0D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		7A2CE072243DF65200CCBB0D /* DayCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCellView.swift; sourceTree = "<group>"; };
+		7A2CE074243DF66E00CCBB0D /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		7A2CE076243DF68C00CCBB0D /* WeekdaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdaysView.swift; sourceTree = "<group>"; };
 		7A36150A242E36D400473ED1 /* MoodDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A36150D242E36D400473ED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A36150F242E36D500473ED1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2CE07A243E271600CCBB0D /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +91,7 @@
 				7A36150D242E36D400473ED1 /* AppDelegate.swift */,
 				7A36150F242E36D500473ED1 /* SceneDelegate.swift */,
 				7ABA3EBF242E488D0072622C /* MultiLineTextField.swift */,
+				7A2CE06C243DF5D600CCBB0D /* Helper.swift */,
 				7ABA3EC3242E5A210072622C /* Model */,
 				7ABA3EC4242E5A270072622C /* Model Controller */,
 				7ABA3EC5242E5A330072622C /* Views */,
@@ -94,6 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				7ACA1F14242E3F53007BEEBF /* Mood.swift */,
+				7A2CE066243DF53800CCBB0D /* Colors.swift */,
+				7A2CE068243DF56300CCBB0D /* Day.swift */,
+				7A2CE06A243DF59D00CCBB0D /* Month.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,6 +137,11 @@
 				7A361521242E385300473ED1 /* HomeView.swift */,
 				7ABA3EC1242E557B0072622C /* MoodRowView.swift */,
 				7ACA1F18242E429F007BEEBF /* AddMoodView.swift */,
+				7A2CE06E243DF5FE00CCBB0D /* GridStack.swift */,
+				7A2CE070243DF62B00CCBB0D /* CalendarView.swift */,
+				7A2CE072243DF65200CCBB0D /* DayCellView.swift */,
+				7A2CE074243DF66E00CCBB0D /* MonthView.swift */,
+				7A2CE076243DF68C00CCBB0D /* WeekdaysView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +162,9 @@
 			dependencies = (
 			);
 			name = MoodDiary;
+			packageProductDependencies = (
+				7A2CE079243E271600CCBB0D /* IQKeyboardManagerSwift */,
+			);
 			productName = MoodDiary;
 			productReference = 7A36150A242E36D400473ED1 /* MoodDiary.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 7A361501242E36D400473ED1;
+			packageReferences = (
+				7A2CE078243E271600CCBB0D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 7A36150B242E36D400473ED1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -189,12 +224,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABA3EC2242E557B0072622C /* MoodRowView.swift in Sources */,
+				7A2CE077243DF68C00CCBB0D /* WeekdaysView.swift in Sources */,
+				7A2CE067243DF53800CCBB0D /* Colors.swift in Sources */,
 				7ACA1F15242E3F53007BEEBF /* Mood.swift in Sources */,
 				7A36150E242E36D400473ED1 /* AppDelegate.swift in Sources */,
+				7A2CE06F243DF5FE00CCBB0D /* GridStack.swift in Sources */,
+				7A2CE073243DF65200CCBB0D /* DayCellView.swift in Sources */,
+				7A2CE071243DF62B00CCBB0D /* CalendarView.swift in Sources */,
+				7A2CE069243DF56300CCBB0D /* Day.swift in Sources */,
 				7ACA1F17242E40F6007BEEBF /* MoodModelController.swift in Sources */,
 				7A361522242E385300473ED1 /* HomeView.swift in Sources */,
 				7A361510242E36D500473ED1 /* SceneDelegate.swift in Sources */,
+				7A2CE075243DF66E00CCBB0D /* MonthView.swift in Sources */,
+				7A2CE06B243DF59D00CCBB0D /* Month.swift in Sources */,
 				7ACA1F19242E429F007BEEBF /* AddMoodView.swift in Sources */,
+				7A2CE06D243DF5D600CCBB0D /* Helper.swift in Sources */,
 				7A361512242E36D500473ED1 /* ContentView.swift in Sources */,
 				7ABA3EC0242E488D0072622C /* MultiLineTextField.swift in Sources */,
 			);
@@ -390,6 +434,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A2CE078243E271600CCBB0D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A2CE079243E271600CCBB0D /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A2CE078243E271600CCBB0D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A361502242E36D400473ED1 /* Project object */;
 }
