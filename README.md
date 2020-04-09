@@ -11,3 +11,6 @@ Calendar by: [akeslo/MonthCal](https://github.com/akeslo/MonthCal)
 ![Image of Initial View with Saved Entry](https://github.com/nelglez/MoodDiarySwiftUI/blob/master/images/ss3.png)
 
 ![Image of Delete Entry on Initial View](https://github.com/nelglez/MoodDiarySwiftUI/blob/master/images/ss4.png)
+
+# License
+See the LICENSE file for more info.
